@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to view this site.</noscript>
+    <div id="root" class="root">
+
+        <header class="header" id="header">
+            <div class="header__container">
+                <div class="title__container">
+                    <div class="header__title">
+                        ALEXEY ALIAPKIN
+                    </div>
+                    <div class="header__subtitle">
+                        Frontend developer
+                    </div>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__container">
+                        <li class="nav__item nav__item-underline"><a href="#home">Home</a></li>
+                        <li class="nav__item nav__item-underline"><a href="#about">About me</a></li>
+                        <li class="nav__item nav__item-underline"><a href="#tech">Skills</a></li>
+                        <li class="nav__item nav__item-underline"><a href="#myworks">My works</a></li>
+                        <li class="nav__item-button">
+                            <a href="#contact" type="button" class="btn btn--primary btn--small">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <a class="anchor" id="home"></a>
+        <section class="homepage">
+            <div class="homepage__container container">
+                <div class="homepage__photo-container">
+                    <img src="img/face.png" alt="me" class="homepage__photo">
+                </div>
+                <div class="homepage__title">
+                    <!-- <h1 class="homepage__title1 _anim-items _anim-item-no-hide">ALEKSEI ALIAPKIN</h1>
+                    <div class="homepage__title2 _anim-items _anim-item-no-hide">Frontend developer</div> -->
+                    <h1 class="homepage__title1">ALEKSEI ALIAPKIN<span></span></h1>
+                    <div class="homepage__title2">Frontend developer<span></span></div>
+                    <div class="homepage__buttons _anim-items _anim-item-no-hide">
+                        <a href="#contact" type="button" class="btn btn--primary btn--mid">CONTACT</a>
+                        <a href="cv.pdf" type="button" class="btn btn--outline btn--mid">DOWNLOAD CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a class="anchor" id="about"></a>
+        <section class="about">
+            <div class="about__container container">
+                <h2 class="section-title _anim-items">ABOUT ME</h2>
+                <p class="about__text">
+                    Hi, my name is Aliapkin Aleksei and i am frontend developer located in Moscow, Russia. My background
+                    is mathmatics and i have previously worked in banking industry.
+
+                </p>
+                <h3 class="subsection">
+                    Education
+                </h3>
+                <ul class="about__text">
+                    <li class="about__li">
+                        <h3>Moscow State university, department of mechanics and mathematics.</h3>
+                    </li>
+                </ul>
+                <h3 class="subsection">
+                    Work experience
+                </h3>
+                <ul class="about__text">
+                    <li class="about__li">
+                        <div class="about__item">
+                            <h3>Full stack web developer in a small business "Business world's partner".</h3>
+                            <p>
+                                I was the only web developer in company. I was developing websites, e-commerce
+                                sites with my own CMS written with PHP/MySQL. I was responsible for design, HTML layout,
+                                JavaScript frontend, backend, deployment.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <a class="anchor" id="tech"></a>
+        <section class="tech">
+            <div class="tech__container container">
+                <h2 class="section-title _anim-items">SKILLS</h2>
+                <h3 class="skills__subsection subsection">Technical skills</h3>
+                <div class="tech__layout _anim-items">
+                    <div class="tech__item _anim-items">
+                        <div class="tech__item-inner">
+                            <span class="tech__image tech__html"></span>
+                            <div class="tech__label">HTML5</div>
+                        </div>
+                    </div>
+                    <div class="tech__item _anim-items">
+                        <div class="tech__item-inner">
+                            <span class="tech__image tech__js"></span>
+                            <div class="tech__label">JavaScript</div>
+                        </div>
+                    </div>
+                    <div class="tech__item _anim-items">
+                        <div class="tech__item-inner">
+                            <span class="tech__image tech__react"></span>
+                            <div class="tech__label">React.js</div>
+                        </div>
+                    </div>
+                    <div class="tech__item _anim-items">
+                        <div class="tech__item-inner">
+                            <span class="tech__image skills__redux"></span>
+                            <div class="tech__label">Redux</div>
+                        </div>
+                    </div>
+                    <div class="tech__item _anim-items">
+                        <div class="tech__item-inner">
+                            <span class="tech__image tech__sass"></span>
+                            <div class="tech__label">Sass</div>
+                        </div>
+                    </div>
+                    <div class="tech__item _anim-items">
+                        <div class="tech__item-inner">
+                            <span class="tech__image skills__jquery"></span>
+                            <div class="tech__label">jQuery</div>
+                        </div>
+                    </div>
+                    <div class="tech__item _anim-items">
+                        <div class="tech__item-inner">
+                            <span class="tech__image skills__git"></span>
+                            <div class="tech__label">Git</div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="skills__subsection subsection">Languages</h3>
+                <div class="skills__lang-layout">
+                    <div class="skills__lang-item">
+                        <h3>Русский</h3>
+                        <div class="skills__lang-level">
+                            <div class="skills__lang-balls">
+                                <span class="skills__ball fill"></span>
+                                <span class="skills__ball fill"></span>
+                                <span class="skills__ball fill"></span>
+                                <span class="skills__ball fill"></span>
+                                <span class="skills__ball fill"></span>
+                            </div>
+                            <span>Native</span>
+                        </div>
+                    </div>
+                    <div class="skills__lang-item">
+                        <h3>English</h3>
+                        <div class="skills__lang-level">
+                            <div class="skills__lang-balls">
+                                <span class="skills__ball fill"></span>
+                                <span class="skills__ball fill"></span>
+                                <span class="skills__ball fill"></span>
+                                <span class="skills__ball fill"></span>
+                                <span class="skills__ball "></span>
+                            </div>
+                            <span>C2 - Advanced</span>
+                        </div>
+                    </div>
+                    <div class="skills__lang-item">
+                        <h3>Français</h3>
+                        <div class="skills__lang-level">
+                            <div class="skills__lang-balls">
+                                <span class="skills__ball fill"></span>
+                                <span class="skills__ball"></span>
+                                <span class="skills__ball"></span>
+                                <span class="skills__ball"></span>
+                                <span class="skills__ball"></span>
+                            </div>
+                            <span>A1/2 - Elementary</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <a class="anchor" id="myworks"></a>
+        <section class="works">
+            <div class="works__container container">
+                <h2 class="section-title _anim-items">MY WORKS</h2>
+                <div class="works__layout">
+
+                    <div class="works__item-container shadow">
+                        <div class="works__item-image-container ">
+                            <a href="https://aaliapkin.github.io/weather-app/">
+                                <video src="/video/weather-app.webm" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        <h3 class="works__title">
+                            <a href="https://aaliapkin.github.io/weather-app/">Weather app</a>
+                        </h3>
+                        <p class="works__desc">
+                            Application, which displays current weather, 5 day forecast, and hourly weather for the next
+                            24 hours. Using both OpenWeatherMap API and WeatherAPI.com.
+                        </p>
+                        <div class="works__subtitle">Technologies used:</div>
+                        <div class="works__tech">
+                            <div class="works__tech-icon works__tech-icon--react"></div>
+                            <div class="works__tech-element">React</div>
+                            <div class="works__tech-icon works__tech-icon--redux"></div>
+                            <div class="works__tech-element">Redux</div>
+                            <div class="works__tech-icon works__tech-icon--openweathermap"></div>
+                            <div class="works__tech-element">OpenWeatherMap API</div>
+                        </div>
+                    </div>
+
+                    <div class="works__item-container shadow">
+                        <div class="works__item-image-container ">
+                            <a href="https://aaliapkin.github.io/to-do_app/">
+                                <video src="/video/to-do_list.webm" autoplay muted loop></video>
+                            </a>
+                        </div>
+
+                        <h3 class="works__title"><a href="https://aaliapkin.github.io/to-do_app/">To-do app</a></h3>
+
+                        <p class="works__desc">
+                            Application frontend for managing task. All items can be sorted by dragging, filtered,
+                            edited inline.
+                        </p>
+                        <div class="works__subtitle">Technologies used:</div>
+                        <div class="works__tech">
+                            <div class="works__tech-icon works__tech-icon--react"></div>
+                            <div class="works__tech-element">React</div>
+                            <div class="works__tech-icon works__tech-icon--bootstrap"></div>
+                            <div class="works__tech-element">Bootstrap</div>
+                        </div>
+                    </div>
+
+                    <div class="works__item-container shadow">
+                        <div class="works__item-image-container ">
+                            <a href="https://github.com/aaliapkin/rec_app/releases">
+                                <video src="/video/rec-app.webm" autoplay muted loop></video>
+                            </a>
+                        </div>
+
+                        <h3 class="works__title"><a href="https://github.com/aaliapkin/rec_app/releases">Screen
+                                recording app</a></h3>
+
+                        <p class="works__desc">
+                            Windows applicaiton for easy creating time lapse recordings of user screen.
+                        </p>
+                        <div class="works__subtitle">Technologies used:</div>
+                        <div class="works__tech">
+                            <div class="works__tech-icon works__tech-icon--ffmpeg"></div>
+                            <div class="works__tech-element">FFMPEG</div>
+                            <div class="works__tech-icon works__tech-icon--cpp"></div>
+                            <div class="works__tech-element">C++</div>
+                            <div class="works__tech-icon works__tech-icon--qt"></div>
+                            <div class="works__tech-element">Qt</div>
+                        </div>
+                    </div>
+
+                    <div class="works__item-container shadow">
+                        <div class="works__item-image-container ">
+                            <a href="https://github.com/aaliapkin/mandelbruh">
+                                <video src="/video/mandelbruh.webm" autoplay muted loop></video>
+                            </a>
+                        </div>
+
+                        <h3 class="works__title"><a href="https://github.com/aaliapkin/mandelbruh">Mandelbruh</a></h3>
+
+                        <p class="works__desc">
+                            Mandelbrot fractal zoom with and without gpu acceleration.
+                        </p>
+                        <div class="works__subtitle">Technologies used:</div>
+                        <div class="works__tech">
+                            <div class="works__tech-icon works__tech-icon--opengl"></div>
+                            <div class="works__tech-element">OpenGL</div>
+                            <div class="works__tech-icon works__tech-icon--cpp"></div>
+                            <div class="works__tech-element">C++</div>
+                            <div class="works__tech-icon works__tech-icon--qt"></div>
+                            <div class="works__tech-element">Qt</div>
+                        </div>
+                    </div>
+                    <!--<div class="works__spacer"></div> -->
+
+                </div>
+            </div>
+        </section>
+        <a class="anchor" id="contact"></a>
+        <section class="contact">
+            <div class="contact__container container">
+                <h2 class="section-title _anim-items">CONTACT</h2>
+                <ul class="contact__list _anim-items">
+                    <li>
+                        <a href="mailto: aaliapkin@gmail.com" target="_blank">
+                            <span class="icon icon-mail"></span>
+                            aaliapkin@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+7 (916) 426-5709" target="_blank">
+                            <span class="icon icon-phone"></span>
+                            +7 (916) 426-5709
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/aaliapkin" target="_blank">
+                            <span class="icon icon-github"></span>
+                            https://github.com/aaliapkin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/aaliapkin" target="_blank">
+                            <span class="icon icon-telegram"></span>
+                            https://t.me/aaliapkin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/hatis_ustes" target="_blank">
+                            <span class="icon icon-inst"></span>
+                            https://www.instagram.com/hatis_ustes/
+                        </a>
+                    </li>
+                </ul>
+                <!-- <form class="contact__form">
+                    <label class="contact__label" for="fname">First name:</label><br>
+                    <input class="contact__title" type="text" id="fname" name="fname" value="Name"><br>
+                    <label class="contact__label" for="lname">Last name:</label><br>
+                    <textarea class="contact__text" name="" id="" cols="30" rows="6">Piece of shit</textarea>
+                    <button class="btn btn--primary btn--large contact__btn">Send E-mail</button>
+                </form> -->
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="canvas.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
