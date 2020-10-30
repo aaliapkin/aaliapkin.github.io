@@ -30,6 +30,7 @@ $(document).ready(function () {
 
         $img.css("transform", `translate(${shiftx}px, ${shifty}px)`);
     });
+
 });
 
 

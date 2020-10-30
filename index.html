@@ -6,7 +6,7 @@
     <link rel="icon" href="/img/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Personal site</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
@@ -48,7 +48,7 @@
         <a class="anchor" id="home"></a>
         <section class="homepage">
             <div class="homepage__container container">
-                <div class="homepage__photo-container">
+                <div class="homepage__photo-container floating">
                     <img src="img/face.png" alt="me" class="homepage__photo">
                 </div>
                 <div class="homepage__title">
@@ -67,7 +67,7 @@
         <section class="about">
             <div class="about__container container">
                 <h2 class="section-title _anim-items">ABOUT ME</h2>
-                <p class="about__text">
+                <p class="about__text _anim-items">
                     Hi, my name is Aliapkin Aleksei and i am frontend developer located in Moscow, Russia. My background
                     is mathmatics and i have previously worked in banking industry.
 
@@ -75,7 +75,7 @@
                 <h3 class="subsection">
                     Education
                 </h3>
-                <ul class="about__text">
+                <ul class="about__text _anim-items">
                     <li class="about__li">
                         <h3>Moscow State university, department of mechanics and mathematics.</h3>
                     </li>
@@ -83,11 +83,11 @@
                 <h3 class="subsection">
                     Work experience
                 </h3>
-                <ul class="about__text">
+                <ul class="about__text _anim-items">
                     <li class="about__li">
                         <div class="about__item">
                             <h3>Full stack web developer in a small business "Business world's partner".</h3>
-                            <p>
+                            <p class="about__text _anim-items">
                                 I was the only web developer in company. I was developing websites, e-commerce
                                 sites with my own CMS written with PHP/MySQL. I was responsible for design, HTML layout,
                                 JavaScript frontend, backend, deployment.
@@ -105,49 +105,49 @@
                 <div class="tech__layout _anim-items">
                     <div class="tech__item _anim-items">
                         <div class="tech__item-inner">
-                            <span class="tech__image tech__html"></span>
+                            <span class="tech__image icon icon--html"></span>
                             <div class="tech__label">HTML5</div>
                         </div>
                     </div>
                     <div class="tech__item _anim-items">
                         <div class="tech__item-inner">
-                            <span class="tech__image tech__js"></span>
+                            <span class="tech__image icon icon--js"></span>
                             <div class="tech__label">JavaScript</div>
                         </div>
                     </div>
                     <div class="tech__item _anim-items">
                         <div class="tech__item-inner">
-                            <span class="tech__image tech__react"></span>
+                            <span class="tech__image icon icon--react"></span>
                             <div class="tech__label">React.js</div>
                         </div>
                     </div>
                     <div class="tech__item _anim-items">
                         <div class="tech__item-inner">
-                            <span class="tech__image skills__redux"></span>
+                            <span class="tech__image icon icon--redux"></span>
                             <div class="tech__label">Redux</div>
                         </div>
                     </div>
                     <div class="tech__item _anim-items">
                         <div class="tech__item-inner">
-                            <span class="tech__image tech__sass"></span>
+                            <span class="tech__image icon icon--sass"></span>
                             <div class="tech__label">Sass</div>
                         </div>
                     </div>
                     <div class="tech__item _anim-items">
                         <div class="tech__item-inner">
-                            <span class="tech__image skills__jquery"></span>
+                            <span class="tech__image icon icon--jquery"></span>
                             <div class="tech__label">jQuery</div>
                         </div>
                     </div>
                     <div class="tech__item _anim-items">
                         <div class="tech__item-inner">
-                            <span class="tech__image skills__git"></span>
+                            <span class="tech__image icon icon--git"></span>
                             <div class="tech__label">Git</div>
                         </div>
                     </div>
                 </div>
                 <h3 class="skills__subsection subsection">Languages</h3>
-                <div class="skills__lang-layout">
+                <div class="skills__lang-layout _anim-items">
                     <div class="skills__lang-item">
                         <h3>Русский</h3>
                         <div class="skills__lang-level">
@@ -198,96 +198,113 @@
                 <h2 class="section-title _anim-items">MY WORKS</h2>
                 <div class="works__layout">
 
-                    <div class="works__item-container shadow">
-                        <div class="works__item-image-container ">
-                            <a href="https://aaliapkin.github.io/weather-app/">
+                    <div class="works__item-container shadow _anim-items _anim-item-no-hide">
+                        <div class="works__item-image-container _fade-out ">
+                            <a target="_blank" href="https://aaliapkin.github.io/weather-app/">
                                 <video src="/video/weather-app.webm" autoplay muted loop></video>
                             </a>
                         </div>
-                        <h3 class="works__title">
-                            <a href="https://aaliapkin.github.io/weather-app/">Weather app</a>
-                        </h3>
-                        <p class="works__desc">
-                            Application, which displays current weather, 5 day forecast, and hourly weather for the next
-                            24 hours. Using both OpenWeatherMap API and WeatherAPI.com.
-                        </p>
-                        <div class="works__subtitle">Technologies used:</div>
-                        <div class="works__tech">
-                            <div class="works__tech-icon works__tech-icon--react"></div>
-                            <div class="works__tech-element">React</div>
-                            <div class="works__tech-icon works__tech-icon--redux"></div>
-                            <div class="works__tech-element">Redux</div>
-                            <div class="works__tech-icon works__tech-icon--openweathermap"></div>
-                            <div class="works__tech-element">OpenWeatherMap API</div>
+                        <div class="works__item-info">
+                            <h3 class="works__title _slide-right">
+                                <a target="_blank" href="https://aaliapkin.github.io/weather-app/">Weather app</a>
+                            </h3>
+                            <p class="works__desc _slide-bottom ">
+                                Application, which displays current weather, 5 day forecast, and hourly weather for the
+                                next
+                                24 hours. Using both OpenWeatherMap API and WeatherAPI.com.
+                            </p>
+                            <div class="works__subtitle">Main technologies used:</div>
+                            <div class="works__tech _slide-right">
+                                <div class="works__tech-icon icon icon--react"></div>
+                                <div class="works__tech-element">React</div>
+                                <div class="works__tech-icon icon icon--redux"></div>
+                                <div class="works__tech-element">Redux</div>
+                                <div class="works__tech-icon  icon icon--openweathermap"></div>
+                                <div class="works__tech-element">OpenWeatherMap API</div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="works__item-container shadow">
-                        <div class="works__item-image-container ">
-                            <a href="https://aaliapkin.github.io/to-do_app/">
+                    <div class="works__item-container shadow _anim-items _anim-item-no-hide">
+                        <div class="works__item-image-container _fade-out ">
+                            <a target="_blank" href="https://aaliapkin.github.io/to-do_app/">
                                 <video src="/video/to-do_list.webm" autoplay muted loop></video>
                             </a>
                         </div>
 
-                        <h3 class="works__title"><a href="https://aaliapkin.github.io/to-do_app/">To-do app</a></h3>
+                        <div class="works__item-info">
+                            <h3 class="works__title _slide-right"><a target="_blank"
+                                    href="https://aaliapkin.github.io/to-do_app/">To-do app</a></h3>
 
-                        <p class="works__desc">
-                            Application frontend for managing task. All items can be sorted by dragging, filtered,
-                            edited inline.
-                        </p>
-                        <div class="works__subtitle">Technologies used:</div>
-                        <div class="works__tech">
-                            <div class="works__tech-icon works__tech-icon--react"></div>
-                            <div class="works__tech-element">React</div>
-                            <div class="works__tech-icon works__tech-icon--bootstrap"></div>
-                            <div class="works__tech-element">Bootstrap</div>
+                            <p class="works__desc _slide-bottom ">
+                                Application frontend for managing task. All items can be sorted by dragging, filtered,
+                                edited inline.
+                            </p>
+                            <div class="works__subtitle">Main technologies used:</div>
+                            <div class="works__tech _slide-right">
+                                <div class="works__tech-icon icon icon--react"></div>
+                                <div class="works__tech-element">React</div>
+                                <div class="works__tech-icon icon icon--bootstrap"></div>
+                                <div class="works__tech-element">Bootstrap</div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="works__item-container shadow">
-                        <div class="works__item-image-container ">
-                            <a href="https://github.com/aaliapkin/rec_app/releases">
+                    <div class="works__item-container shadow _anim-items _anim-item-no-hide">
+                        <div class="works__item-image-container _fade-out ">
+                            <a target="_blank" href="https://github.com/aaliapkin/rec_app/releases">
                                 <video src="/video/rec-app.webm" autoplay muted loop></video>
                             </a>
                         </div>
+                        <div class="works__item-info">
+                            <h3 class="works__title _slide-right"><a
+                                    href="https://github.com/aaliapkin/rec_app/releases">Screen
+                                    recording app</a></h3>
 
-                        <h3 class="works__title"><a href="https://github.com/aaliapkin/rec_app/releases">Screen
-                                recording app</a></h3>
-
-                        <p class="works__desc">
-                            Windows applicaiton for easy creating time lapse recordings of user screen.
-                        </p>
-                        <div class="works__subtitle">Technologies used:</div>
-                        <div class="works__tech">
-                            <div class="works__tech-icon works__tech-icon--ffmpeg"></div>
-                            <div class="works__tech-element">FFMPEG</div>
-                            <div class="works__tech-icon works__tech-icon--cpp"></div>
-                            <div class="works__tech-element">C++</div>
-                            <div class="works__tech-icon works__tech-icon--qt"></div>
-                            <div class="works__tech-element">Qt</div>
+                            <p class="works__desc _slide-bottom ">
+                                Windows applicaiton for easy creating time lapse recordings of user screen.
+                            </p>
+                            <div class="works__subtitle">Main technologies used:</div>
+                            <div class="works__tech _slide-right">
+                                <div class="works__tech-icon icon icon--ffmpeg"></div>
+                                <div class="works__tech-element">FFMPEG</div>
+                                <div class="works__tech-icon icon icon--cpp"></div>
+                                <div class="works__tech-element">C++</div>
+                                <div class="works__tech-icon icon icon--qt"></div>
+                                <div class="works__tech-element">Qt</div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="works__item-container shadow">
-                        <div class="works__item-image-container ">
-                            <a href="https://github.com/aaliapkin/mandelbruh">
+                    <div class="works__item-container shadow _anim-items _anim-item-no-hide">
+                        <div class="works__item-image-container _fade-out ">
+                            <a target="_blank" href="https://aaliapkin.github.io/web-mandelbrot/">
                                 <video src="/video/mandelbruh.webm" autoplay muted loop></video>
                             </a>
                         </div>
 
-                        <h3 class="works__title"><a href="https://github.com/aaliapkin/mandelbruh">Mandelbruh</a></h3>
+                        <div class="works__item-info">
+                            <h3 class="works__title _slide-right"><a target="_blank"
+                                    href="https://aaliapkin.github.io/web-mandelbrot/">Mandelbruh</a>
+                            </h3>
 
-                        <p class="works__desc">
-                            Mandelbrot fractal zoom with and without gpu acceleration.
-                        </p>
-                        <div class="works__subtitle">Technologies used:</div>
-                        <div class="works__tech">
-                            <div class="works__tech-icon works__tech-icon--opengl"></div>
-                            <div class="works__tech-element">OpenGL</div>
-                            <div class="works__tech-icon works__tech-icon--cpp"></div>
-                            <div class="works__tech-element">C++</div>
-                            <div class="works__tech-icon works__tech-icon--qt"></div>
-                            <div class="works__tech-element">Qt</div>
+                            <p class="works__desc _slide-bottom ">
+                                Developed several implementations of mandelbrot fractal zoom applications. Thre are CPU,
+                                GPU (OpenGL), and GPU (Web-GL) versions. Due to 32-bit limit of precision of floating
+                                point
+                                numbers in WebGL, zooming in that version is limited.
+                            </p>
+                            <div class="works__subtitle">Main technologies used:</div>
+                            <div class="works__tech _slide-right">
+                                <div class="works__tech-icon icon icon--opengl"></div>
+                                <div class="works__tech-element">OpenGL</div>
+                                <div class="works__tech-icon icon icon--webgl"></div>
+                                <div class="works__tech-element">WebGL</div>
+                                <div class="works__tech-icon icon icon--js"></div>
+                                <div class="works__tech-element">JavaScript</div>
+                                <div class="works__tech-icon icon icon--cpp"></div>
+                                <div class="works__tech-element">C++</div>
+                            </div>
                         </div>
                     </div>
                     <!--<div class="works__spacer"></div> -->
@@ -300,33 +317,33 @@
             <div class="contact__container container">
                 <h2 class="section-title _anim-items">CONTACT</h2>
                 <ul class="contact__list _anim-items">
-                    <li>
+                    <li class="contact__item">
                         <a href="mailto: aaliapkin@gmail.com" target="_blank">
-                            <span class="icon icon-mail"></span>
+                            <span class="contact__icon icon icon--mail"></span>
                             aaliapkin@gmail.com
                         </a>
                     </li>
-                    <li>
+                    <li class="contact__item">
                         <a href="tel:+7 (916) 426-5709" target="_blank">
-                            <span class="icon icon-phone"></span>
+                            <span class="contact__icon icon icon--phone"></span>
                             +7 (916) 426-5709
                         </a>
                     </li>
-                    <li>
+                    <li class="contact__item">
                         <a href="https://github.com/aaliapkin" target="_blank">
-                            <span class="icon icon-github"></span>
+                            <span class="contact__icon icon icon--github"></span>
                             https://github.com/aaliapkin
                         </a>
                     </li>
-                    <li>
+                    <li class="contact__item">
                         <a href="https://t.me/aaliapkin" target="_blank">
-                            <span class="icon icon-telegram"></span>
+                            <span class="contact__icon icon icon--telegram"></span>
                             https://t.me/aaliapkin
                         </a>
                     </li>
-                    <li>
+                    <li class="contact__item">
                         <a href="https://www.instagram.com/hatis_ustes" target="_blank">
-                            <span class="icon icon-inst"></span>
+                            <span class="contact__icon icon icon--inst"></span>
                             https://www.instagram.com/hatis_ustes/
                         </a>
                     </li>
