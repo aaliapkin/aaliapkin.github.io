@@ -16,6 +16,10 @@ $(document).ready(function () {
         $('.header__burger,.nav').toggleClass('active');
     });
 
+    $('.nav__item,.nav__item-button').click(function (e) {
+        $('.header__burger,.nav').removeClass('active');
+    });
+
 
     $(document).bind('mousemove', function (e) {
         var $img = $('.homepage__photo');
@@ -96,5 +100,4 @@ if (animItems.length > 0) {
     setTimeout(() => { animOnScroll(); }, 300);
 
     window.addEventListener('scroll', () => { animOnScroll(); });
-
 }
