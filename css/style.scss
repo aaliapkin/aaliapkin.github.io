@@ -140,6 +140,9 @@ html {
 
 body {
     font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(60, 22, 66);
+    background: linear-gradient(135deg, rgba(60, 22, 66, 1) 0%, rgba(8, 99, 117, 1) 100%);
+    background-attachment: fixed;
 }
 
 .root {
@@ -1368,7 +1371,7 @@ a.anchor {
 
 .works__title {
     margin: 0px 0px 10px 0px;
-    flex:1 1 auto;
+    flex: 1 1 auto;
     a {
         color: var(--accent);
         font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -1405,8 +1408,8 @@ a.anchor {
     margin: 0px 0px 0px 8px;
 
     .icon {
-        width:30px;
-        height:30px;
+        width: 30px;
+        height: 30px;
         background-color: var(--secondary);
     }
 

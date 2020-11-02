@@ -127,6 +127,9 @@ html {
 
 body {
   font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #3c1642;
+  background: linear-gradient(135deg, #3c1642 0%, #086375 100%);
+  background-attachment: fixed;
 }
 
 .root {
