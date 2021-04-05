@@ -1,0 +1,264 @@
+// NULL -----------------------------------------------------------------------------------------------------------------
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 10pt;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+// ----- Globals ---------------------------------------------------------------------------------------------------------
+
+body {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 13pt;
+    letter-spacing: 0.05em;
+}
+
+.heading {
+    font-family: Lato;
+    letter-spacing: 0.1em;
+    font-size: 1.4em;
+    margin: 0.5em 0 1em 0;
+}
+
+// -----------------------------------------------------------------------------------------------------------------------
+
+.container {
+    margin: auto;
+    max-width: 45em;
+}
+
+.header {
+    padding: 0 0 0.8em 0;
+}
+
+.title {
+    font-family: Lato;
+    letter-spacing: 0.1em;
+    font-size: 3em;
+    margin: 0 0 0.3em 0;
+    line-height: 0.9em;
+}
+
+.subtitle {
+    font-family: Lato;
+    letter-spacing: 0.05em;
+    font-size: 2em;
+    margin-bottom: 0.3em;
+}
+
+.columns {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-items: stretch;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0.1em;
+        background-color: #ccc;
+    }
+}
+.columns__left {
+    flex: 0 1 20em;
+    padding: 0.5em 1.5em 0 0;
+}
+.columns__right {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0.5em 0 0 1.5em;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0.1em;
+        height: 100%;
+        background-color: #ccc;
+    }
+}
+.contact {
+    &__header {
+        font-family: Lato;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        font-size: 1em;
+        margin-bottom: 0.5em;
+    }
+    &__item {
+        display: block;
+        color: black;
+        margin: 0 0 1em 0;
+        :hover {
+            color: black;
+        }
+    }
+}
+
+.skills {
+    &__title {
+    }
+    &__value-outer {
+    }
+}
+
+.skills-value {
+    position: relative;
+    width: 100%;
+    height: 0.3em;
+    background-color: #ccc;
+    margin: 0 0 1em 0;
+
+    &__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: black;
+    }
+    &__inner--100 {
+        width: 100%;
+    }
+    &__inner--90 {
+        width: 90%;
+    }
+    &__inner--80 {
+        width: 80%;
+    }
+    &__inner--70 {
+        width: 70%;
+    }
+    &__inner--60 {
+        width: 60%;
+    }
+}
+
+.profile {
+    margin-bottom: 1em;
+    line-height: 1.3em;
+}
+
+.history {
+    &__header {
+        font-family: Lato;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        font-size: 1em;
+        margin: 0 0 0.2em 0;
+    }
+    &__years {
+        font-family: Lato;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        font-size: 1em;
+        margin: 0.5em 0 0.5em 0;
+    }
+    &__description {
+        margin: 1em 0 1em 0;
+        li {
+            position: relative;
+            padding: 0 0 0 4em;
+            margin: 0 0 0.5em 0;
+            line-height: 1.3em;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0.5em;
+                left: 2em;
+                width: 0.4em;
+                height: 0.4em;
+                border-radius: 0.2em;
+                background-color: black;
+            }
+        }
+    }
+}

@@ -302,9 +302,9 @@ a.anchor {
           mask-image: url("/img/SVG/react.svg");
 }
 
-.icon--react {
-  -webkit-mask-image: url("/img/SVG/react.svg");
-          mask-image: url("/img/SVG/react.svg");
+.icon--vue {
+  -webkit-mask-image: url("/img/SVG/vue.svg");
+          mask-image: url("/img/SVG/vue.svg");
 }
 
 .icon--redux {
